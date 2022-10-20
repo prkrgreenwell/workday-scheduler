@@ -18,6 +18,30 @@ var hourRows = [
   $("#five"),
 ];
 
+var buttons = [
+  $("#nineBtn"),
+  $("#tenBtn"),
+  $("#elevenBtn"),
+  $("#twelveBtn"),
+  $("#oneBtn"),
+  $("#twoBtn"),
+  $("#threeBtn"),
+  $("#fourBtn"),
+  $("#fiveBtn"),
+];
+
+var texts = [
+  $("#nineText"),
+  $("#nineText"),
+  $("#nineText"),
+  $("#nineText"),
+  $("#nineText"),
+  $("#nineText"),
+  $("#nineText"),
+  $("#nineText"),
+  $("#nineText"),
+];
+
 console.log(hourRows);
 
 function colorRows() {
@@ -32,5 +56,9 @@ function colorRows() {
     }
   }
 }
-
 colorRows();
+
+$("#nineBtn").on("click", (e) => {
+  localStorage.setItem("stuff", $("#nineText").val());
+  console.log(localStorage);
+});
