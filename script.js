@@ -1,30 +1,16 @@
+/** @format */
+
 var storedAppointments = JSON.parse(localStorage.getItem("appointments"));
 
-if (storedAppointments["nineArea"] !== null) {
+if (storedAppointments !== null) {
   $("#nineText").text(storedAppointments["nineArea"]);
-}
-if (storedAppointments["tenArea"] !== null) {
   $("#tenText").text(storedAppointments["tenArea"]);
-}
-if (storedAppointments["elevenArea"] !== null) {
   $("#elevenText").text(storedAppointments["elevenArea"]);
-}
-if (storedAppointments["twelveArea"] !== null) {
   $("#twelveText").text(storedAppointments["twelveArea"]);
-}
-if (storedAppointments["oneArea"] !== null) {
   $("#oneText").text(storedAppointments["oneArea"]);
-}
-if (storedAppointments["twoArea"] !== null) {
   $("#twoText").text(storedAppointments["twoArea"]);
-}
-if (storedAppointments["threeArea"] !== null) {
   $("#threeText").text(storedAppointments["threeArea"]);
-}
-if (storedAppointments["fourArea"] !== null) {
   $("#fourText").text(storedAppointments["fourArea"]);
-}
-if (storedAppointments["fiveArea"] !== null) {
   $("#fiveText").text(storedAppointments["fiveArea"]);
 }
 
